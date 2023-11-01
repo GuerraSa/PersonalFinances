@@ -1,3 +1,7 @@
+# Sensitive Financial Data
+/data/raw
+/data/processed
+
 # History files
 .Rhistory
 .Rapp.history
