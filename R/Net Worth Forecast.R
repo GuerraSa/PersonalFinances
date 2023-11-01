@@ -2,7 +2,7 @@ library(readxl)
 library(data.table)
 library(tidyverse)
 library(lubridate)
-source("src/functions.R")
+source("R/functions.R")
 
 data <- setNames(lapply(excel_sheets("data/raw/balancesheet.xlsx"), function(x) {
   as.data.table(read_xlsx("data/raw/balancesheet.xlsx", sheet = x))}),

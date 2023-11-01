@@ -1,6 +1,6 @@
 library(data.table)
 library(tidyverse)
-source("src/functions.R")
+source("R/functions.R")
 
 statement <- load_statement(cc = "AMEX") %>% 
   .[!str_detect(Merchant, "INSTALLMENT PLAN") | Amount < 0, Balance := cumsum(Amount)]
